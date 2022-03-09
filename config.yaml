@@ -1,0 +1,21 @@
+#"Items Link" is a link which returns search results.
+#"Items Count Link" is a link which returns search results count.
+#"Item Base Link" is raw link of item.
+#"Item Base Link" is raw link of image.
+#"Search Limit Mark", "Postcode Mark" and "Action Mark" are marked words in "Items Link" and in
+#"Items Count Link" which must be replaced by correct value to get ա valid link.
+#Then this links must be used for getting items count, items list for buy and rent actions.
+Project: inDATAside
+Postcodes:
+  - BA7
+  - BA22
+Items Link: https://web-customer-api.boomin.com/search?bathroomsMin=&bedroomsMax=&bedroomsMin=&dateAvailable=&furnishedType=&includeLetAgreed=false&includeSSTC=false&isChainFree=false&isHouseShare=false&isLetting=ACTION&isNewBuild=false&isPetsAllowed=false&isSharedOwnership=false&isStudentAccommodation=false&letType=&location=POSTCODE&page=&placeId=&priceMax=&priceMin=&propertyStyle=&propertyType=&radius=0&sort=2&source=search-web&withGarage=false&withGarden=false&limit=MAX_ITEM
+Items Count Link: https://web-customer-api.boomin.com/search/count?placeId=&location=POSTCODE&radius=0&priceMin=&priceMax=&bedroomsMin=&bedroomsMax=&bathroomsMin=&propertyType=&propertyStyle=&isLetting=ACTION&letType=&furnishedType=&withGarage=false&withGarden=false&includeSSTC=false&includeLetAgreed=false&isNewBuild=false&isChainFree=false&isSharedOwnership=false&isHouseShare=false&isPetsAllowed=false&isStudentAccommodation=false&dateAvailable=&page=&sort=2&source=search-web
+Item Base Link: https://www.boomin.com/property-for-sale/property-details/
+Image Base Link: https://files.boomin.com/cdn-cgi/image/quality=90,width=1920
+Search Limit Mark: MAX_ITEM
+Postcode Mark: POSTCODE
+Action Mark: ACTION
+Actions:
+  Buy: "false"
+  Rent: "true"
